@@ -11,28 +11,15 @@
     }else{
         echo "不正確連接資料庫</br>" . mysqli_connect_error();
     }
+    
+    $name = $_POST["name"];
+    $password = $_POST["password"];
 
     $data = array();    
-    $sql = "SELECT * FROM admin;";
+    $sql = "SELECT * FROM admin WHERE name='{$name}' and password='{$password}';";
     $result = mysqli_query($link, $sql);
-    
-    if ($result) {
-        if (mysqli_num_rows($result)>0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $data[$row["name"]] = $row["password"];
-            }
-        }
-        mysqli_free_result($result);
-    }else {
-        echo "{$sql} 語法執行失敗，錯誤訊息: " . mysqli_error($link);
-    }
-    if(array_key_exists($_POST["name"], $data)){
-        if($_POST["password"]===$data[$_POST["name"]]){
-            //TODO: 帳密正確要跳到後台頁面
-        }else{
-            echo '<script>window.alert("name or password is wrong")</script>';
-            echo '<script>document.location.href="../../log_in?index.html"</script>';
-        }
+    if(mysqli_num_rows($result)>0){
+        //TODO: 帳密正確要跳到後台頁面
     }else{
         echo '<script>window.alert("name or password is wrong")</script>';
         echo '<script>document.location.href="../../log_in?index.html"</script>';
