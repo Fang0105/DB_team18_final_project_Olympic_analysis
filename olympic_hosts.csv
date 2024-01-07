@@ -1,0 +1,54 @@
+game_slug,game_location,game_name,game_season,game_year
+beijing-2022,China,Beijing 2022,Winter,2022
+tokyo-2020,Japan,Tokyo 2020,Summer,2020
+pyeongchang-2018,Republic of Korea,PyeongChang 2018,Winter,2018
+rio-2016,Brazil,Rio 2016,Summer,2016
+sochi-2014,Russian Federation,Sochi 2014,Winter,2014
+london-2012,Great Britain,London 2012,Summer,2012
+vancouver-2010,Canada,Vancouver 2010,Winter,2010
+beijing-2008,China,Beijing 2008,Summer,2008
+turin-2006,Italy,Turin 2006,Winter,2006
+athens-2004,Greece,Athens 2004,Summer,2004
+salt-lake-city-2002,United States,Salt Lake City 2002,Winter,2002
+sydney-2000,Australia,Sydney 2000,Summer,2000
+nagano-1998,Japan,Nagano 1998,Winter,1998
+atlanta-1996,United States,Atlanta 1996,Summer,1996
+lillehammer-1994,Norway,Lillehammer 1994,Winter,1994
+barcelona-1992,Spain,Barcelona 1992,Summer,1992
+albertville-1992,France,Albertville 1992,Winter,1992
+seoul-1988,Republic of Korea,Seoul 1988,Summer,1988
+calgary-1988,Canada,Calgary 1988,Winter,1988
+los-angeles-1984,United States,Los Angeles 1984,Summer,1984
+sarajevo-1984,Yugoslavia,Sarajevo 1984,Winter,1984
+moscow-1980,USSR,Moscow 1980,Summer,1980
+lake-placid-1980,United States,Lake Placid 1980,Winter,1980
+montreal-1976,Canada,Montreal 1976,Summer,1976
+innsbruck-1976,Austria,Innsbruck 1976,Winter,1976
+munich-1972,Federal Republic of Germany,Munich 1972,Summer,1972
+sapporo-1972,Japan,Sapporo 1972,Winter,1972
+mexico-city-1968,Mexico,Mexico City 1968,Summer,1968
+grenoble-1968,France,Grenoble 1968,Winter,1968
+tokyo-1964,Japan,Tokyo 1964,Summer,1964
+innsbruck-1964,Austria,Innsbruck 1964,Winter,1964
+rome-1960,Italy,Rome 1960,Summer,1960
+squaw-valley-1960,United States,Squaw Valley 1960,Winter,1960
+melbourne-1956,"Australia, Sweden",Melbourne 1956,Summer,1956
+cortina-d-ampezzo-1956,Italy,Cortina d'Ampezzo 1956,Winter,1956
+helsinki-1952,Finland,Helsinki 1952,Summer,1952
+oslo-1952,Norway,Oslo 1952,Winter,1952
+london-1948,Great Britain,London 1948,Summer,1948
+st-moritz-1948,Switzerland,St. Moritz 1948,Winter,1948
+berlin-1936,Germany,Berlin 1936,Summer,1936
+garmisch-partenkirchen-1936,Germany,Garmisch-Partenkirchen 1936,Winter,1936
+los-angeles-1932,United States,Los Angeles 1932,Summer,1932
+lake-placid-1932,United States,Lake Placid 1932,Winter,1932
+amsterdam-1928,Netherlands,Amsterdam 1928,Summer,1928
+st-moritz-1928,Switzerland,St. Moritz 1928,Winter,1928
+paris-1924,France,Paris 1924,Summer,1924
+chamonix-1924,France,Chamonix 1924,Winter,1924
+antwerp-1920,Belgium,Antwerp 1920,Summer,1920
+stockholm-1912,Sweden,Stockholm 1912,Summer,1912
+london-1908,Great Britain,London 1908,Summer,1908
+st-louis-1904,United States,St. Louis 1904,Summer,1904
+paris-1900,France,Paris 1900,Summer,1900
+athens-1896,Greece,Athens 1896,Summer,1896
