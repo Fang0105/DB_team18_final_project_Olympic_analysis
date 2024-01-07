@@ -20,7 +20,7 @@ create table host(
     game_year varchar (10) NOT NULL
 );
 
-create table ahtlete(
+create table athlete(
     athlete_url varchar (100) NOT NULL,
     athlete_full_name varchar (50) NOT NULL,
     game_participation int NOT NULL,
@@ -44,7 +44,7 @@ lines terminated by '\n'
 ignore 1 lines;
 
 load data local infile './olympic_athletes.csv'
-into table ahtlete
+into table athlete
 fields terminated by ','
 enclosed by '"'
 lines terminated by '\n'
