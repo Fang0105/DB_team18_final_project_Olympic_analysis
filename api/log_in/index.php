@@ -19,10 +19,11 @@
     $sql = "SELECT * FROM admin WHERE name='{$name}' and password='{$password}';";
     $result = mysqli_query($link, $sql);
     if(mysqli_num_rows($result)>0){
-        //TODO: 帳密正確要跳到後台頁面
+        echo '<script>window.alert("登入成功")</script>';
+        echo '<script>document.location.href="../../admin_control/index.html"</script>';
     }else{
-        echo '<script>window.alert("name or password is wrong")</script>';
-        echo '<script>document.location.href="../../log_in?index.html"</script>';
+        echo '<script>window.alert("帳密錯誤")</script>';
+        echo '<script>document.location.href="../../log_in/index.html"</script>';
     }
     
 ?>
