@@ -94,7 +94,7 @@
                 
                 echo "<td>";
                 echo "<form action=\"../modify/result_modify.php\" method=\"post\">";
-                    echo "<button type='sumbit'>修改資料</button>";     
+                    echo "<button type=\"sumbit\">修改資料</button>";     
                     echo "<input type=\"hidden\" name=\"discipline_title\" value=\"{$row["discipline_title"]}\">";
                     echo "<input type=\"hidden\" name=\"event_title\" value=\"{$row["event_title"]}\">";
                     echo "<input type=\"hidden\" name=\"slug_game\" value=\"{$row["slug_game"]}\">";
@@ -111,7 +111,7 @@
 
                 echo "<td>";
                 echo "<form action=\"../delete/send_result_delete.php\" method=\"post\">";
-                    echo "<button type='sumbit'>刪除</button>";
+                    echo "<button type=\"sumbit\">刪除</button>";
                     
                     echo "<input type=\"hidden\" name=\"discipline_title\" value=\"{$row["discipline_title"]}\">";
                     echo "<input type=\"hidden\" name=\"event_title\" value=\"{$row["event_title"]}\">";
@@ -124,7 +124,7 @@
                     echo "<input type=\"hidden\" name=\"athlete_url\" value=\"{$row["athlete_url"]}\">";
                     echo "<input type=\"hidden\" name=\"value_unit\" value=\"{$row["value_unit"]}\">";
                     echo "<input type=\"hidden\" name=\"value_type\" value=\"{$row["value_type"]}\">";
-                echo "</from>";
+                echo "</form>";
                 echo "</td>";
 
                 echo "</tr>";
