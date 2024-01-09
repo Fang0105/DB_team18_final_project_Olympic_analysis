@@ -13,7 +13,8 @@
     $sql = "SELECT * FROM modify_result";
     $result = mysqli_query($link, $sql);
     if(mysqli_num_rows($result)===0){
-        echo "no sumbit";
+        echo '<script>window.alert("no sumbit")</script>';
+        echo '<script>document.location.href="../../admin_control/index.html"</script>';
     }else{
         while($row=mysqli_fetch_assoc($result)){
             echo "old : ";  
@@ -26,8 +27,8 @@
                     echo "<th>medal_type</th>";
                     echo "<th>rank_position</th>";
                     echo "<th>country_name</th>";
-                    echo "<th>athlete_url</th>";
                     echo "<th>athlete_full_name</th>";
+                    echo "<th>athlete_url</th>";
                     echo "<th>value_unit</th>";
                     echo "<th>value_type</th>";
                 echo "</tr>";
@@ -58,8 +59,8 @@
                     echo "<th>new_medal_type</th>";
                     echo "<th>new_rank_position</th>";
                     echo "<th>new_country_name</th>";
-                    echo "<th>new_athlete_url</th>";
                     echo "<th>new_athlete_full_name</th>";
+                    echo "<th>new_athlete_url</th>";
                     echo "<th>new_value_unit</th>";
                     echo "<th>new_value_type</th>";
                 echo "</tr>";
@@ -92,7 +93,16 @@
                 echo "<input type=\"hidden\" name=\"athlete_url\" value=\"{$row["athlete_url"]}\">";
                 echo "<input type=\"hidden\" name=\"value_unit\" value=\"{$row["value_unit"]}\">";
                 echo "<input type=\"hidden\" name=\"value_type\" value=\"{$row["value_type"]}\">";
-                echo "<input type=\"hidden\" name=\"agree\" value=true>";
+
+                echo "<input type=\"hidden\" name=\"new_medal_type\" value=\"{$row["new_medal_type"]}\">";
+                echo "<input type=\"hidden\" name=\"new_rank_position\" value=\"{$row["new_rank_position"]}\">";
+                echo "<input type=\"hidden\" name=\"new_country_name\" value=\"{$row["new_country_name"]}\">";
+                echo "<input type=\"hidden\" name=\"new_athlete_url\" value=\"{$row["new_athlete_url"]}\">";
+                echo "<input type=\"hidden\" name=\"new_athlete_full_name\" value=\"{$row["new_athlete_full_name"]}\">";
+                echo "<input type=\"hidden\" name=\"new_value_unit\" value=\"{$row["new_value_unit"]}\">";
+                echo "<input type=\"hidden\" name=\"new_value_type\" value=\"{$row["new_value_type"]}\">";
+
+                echo "<input type=\"hidden\" name=\"agree\" value=\"true\">";
                 echo "<button type=\"sumbit\">同意</button>";
             echo "</form>";
 
@@ -109,7 +119,16 @@
                 echo "<input type=\"hidden\" name=\"athlete_url\" value=\"{$row["athlete_url"]}\">";
                 echo "<input type=\"hidden\" name=\"value_unit\" value=\"{$row["value_unit"]}\">";
                 echo "<input type=\"hidden\" name=\"value_type\" value=\"{$row["value_type"]}\">";
-                echo "<input type=\"hidden\" name=\"agree\" value=false>";
+
+                echo "<input type=\"hidden\" name=\"new_medal_type\" value=\"{$row["new_medal_type"]}\">";
+                echo "<input type=\"hidden\" name=\"new_rank_position\" value=\"{$row["new_rank_position"]}\">";
+                echo "<input type=\"hidden\" name=\"new_country_name\" value=\"{$row["new_country_name"]}\">";
+                echo "<input type=\"hidden\" name=\"new_athlete_url\" value=\"{$row["new_athlete_url"]}\">";
+                echo "<input type=\"hidden\" name=\"new_athlete_full_name\" value=\"{$row["new_athlete_full_name"]}\">";
+                echo "<input type=\"hidden\" name=\"new_value_unit\" value=\"{$row["new_value_unit"]}\">";
+                echo "<input type=\"hidden\" name=\"new_value_type\" value=\"{$row["new_value_type"]}\">";
+
+                echo "<input type=\"hidden\" name=\"agree\" value=\"false\">";
                 echo "<button type=\"sumbit\">不同意</button>";
             echo "</form>";
 
