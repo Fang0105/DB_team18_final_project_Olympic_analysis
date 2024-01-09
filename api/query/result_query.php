@@ -1,4 +1,4 @@
-<title>查詢結果 hahaasdasdasdasd</title>
+<title>查詢結果</title>
 <input type="button" value="重新查詢" onclick="location.href='../../query/index.html'">
 <table border="1"> 
     <tr>
