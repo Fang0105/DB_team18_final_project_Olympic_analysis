@@ -16,8 +16,7 @@
     $result = mysqli_query($link, $sql);
     $id = 1;
     if(mysqli_num_rows($result)!=0){
-        //max id
-        $sql = "SELECT MAX(id) as id FROM modify_result";
+        $sql = "SELECT MAX(id) as id FROM delete_result";
         $result = mysqli_query($link, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
             $id = $row["id"]+1;
