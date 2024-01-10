@@ -1,3 +1,5 @@
+drop table admin;
+
 drop table athlete;
 
 drop table result;
