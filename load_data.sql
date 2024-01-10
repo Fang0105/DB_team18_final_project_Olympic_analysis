@@ -1,3 +1,8 @@
+create table admin(
+    name varchar (100) NOT NULL,
+    password varchar (100) NOT NULL
+);
+
 create table result(
     discipline_title varchar (100) NOT NULL,
     event_title varchar (100) NOT NULL,
@@ -66,6 +71,13 @@ create table delete_result(
     value_unit varchar (30),
     value_type varchar (30)
 );
+
+load data local infile './admin_test_data.csv'
+into table admin
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\n'
+ignore 1 lines;
 
 load data local infile './olympic_results.csv'
 into table result

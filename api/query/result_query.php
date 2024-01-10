@@ -32,7 +32,12 @@
         $participant_type = $_POST["participant_type"];
         $rank_position = $_POST["rank_position"];
 
-        $event_title = explode(", ",$discipline_title)[1];
+        if(isset(explode(", ",$discipline_title)[1])){
+            $event_title = explode(", ",$discipline_title)[1];
+        }
+        else{
+            $event_title = 0;
+        }
         $discipline_title = explode(", ",$discipline_title)[0];
         $sql = "SELECT * FROM result";
         $first = true;
